@@ -9,7 +9,7 @@ Airflow est utilisé pour **orchestrer le flux de données**, automatiser la ré
 
 ## Architecture du projet
 
-![Architecture](images/architecture.png)
+![Architecture](images/architecture.jpg)
 
 1. **Kafka** : message broker qui reçoit les événements d’utilisateurs créés et les stocke dans le topic `users_created`.  
 2. **Spark Streaming** : lit les messages Kafka, transforme les données, et les prépare pour Cassandra.  
@@ -45,19 +45,19 @@ Airflow est utilisé pour **orchestrer le flux de données**, automatiser la ré
 
 ## Images explicatives
 
-![docker ](images/docker.png)  
+![docker ](images/docker.jpg)  
 
 
-![broker kafka ](images/brokerkafka.png)  
+![broker kafka ](images/brokerkafka.jpg)  
 
 
-![topic kafka](images/user_created.png)  
+![topic kafka](images/user_created.jpg)  
 *Les données transformées sont insérées dans Cassandra.*
 
-![Airflow DAG](images/airflow.png)  
+![Airflow DAG](images/airflow.jpg)  
 *Airflow orchestre le workflow de streaming et récupération de données.*
 
-![donnees dans cassandra](images/cassandradata.png)  
+![donnees dans cassandra](images/cassandradata.jpg)  
 *Flux de données complet : Kafka → Spark Streaming → Cassandra, orchestré par Airflow.*
 
 ---
