@@ -18,16 +18,6 @@ Airflow est utilisé pour **orchestrer le flux de données**, automatiser la ré
 
 ---
 
-## Fonctionnalités principales
-
-- Connexion à Kafka pour lire un topic `users_created`.  
-- Transformation des messages JSON en **DataFrame Spark**.  
-- Connexion à Cassandra et création de keyspace + table si elles n’existent pas.  
-- Écriture des données dans Cassandra en **temps réel**.  
-- Orchestration du flux de données via **Airflow DAG**.  
-
----
-
 ## Technologies utilisées
 
 | Technologie | Rôle dans le projet |
@@ -43,7 +33,7 @@ Airflow est utilisé pour **orchestrer le flux de données**, automatiser la ré
 
 ---
 
-## Images explicatives
+## Images 
 
 ![docker ](images/docker.jpg)  
 
@@ -52,13 +42,12 @@ Airflow est utilisé pour **orchestrer le flux de données**, automatiser la ré
 
 
 ![topic kafka](images/user_created.jpg)  
-*Les données transformées sont insérées dans Cassandra.*
+
 
 ![Airflow DAG](images/airflow.jpg)  
-*Airflow orchestre le workflow de streaming et récupération de données.*
 
 ![donnees dans cassandra](images/cassandradata.jpg)  
-*Flux de données complet : Kafka → Spark Streaming → Cassandra, orchestré par Airflow.*
+
 
 ---
 
